@@ -1,13 +1,9 @@
-# ExplorViz Backend
+# Kieker Observability Framework Version 2 Demo
 
 # Start: `docker compose up -d`
 # Stop + remove volumes: `docker compose down -v`
 
-# To use native images instead of jvm-based images either modify .env file
-# or start with `EXPLORVIZ_JAVA_IMAGE_TYPE=native docker compose up -d`
-
-# Using custom .env file, e.g., `docker compose --env-file .env-custom up -d`
-# Specify which environment to use in env-file, i.e. enable self-monitoring
+# Credit: the original Docker compose files are from https://github.com/ExplorViz/deployment
 
 include:
   - ./compose/compose.base.yaml
