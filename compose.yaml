@@ -73,15 +73,31 @@ services:
       - teastore-auth
 
   teastore-webui:
+    hostname: teastore-webui
     image: kieker/teastore-webui:kieker-2.0.2
     environment:
       HOST_NAME: "teastore-webui"
       REGISTRY_HOST: "teastore-registry"
       RABBITMQ_HOST: "teastore-rabbitmq"
+    expose:
+      - "8080"
     ports:
       - "8080:8080"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:8080/tools.descartes.teastore.webui/status |grep -I OK |wc -l |xargs -n 1 bash -c '[ $0 == 4 ]'"]
+      interval: 5s
+      timeout: 10s
+      retries: 60
     depends_on:
       - teastore-image
+
+  teastore-jmeter:
+    image: kieker/teastore-jmeter:kieker-2.0.2
+    expose:
+      - "8080"
+    depends_on:
+      teastore-webui:
+        condition: service_healthy
 
   otel-transformer:
     hostname: otel-transformer
