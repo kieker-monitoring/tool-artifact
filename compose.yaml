@@ -11,6 +11,7 @@ include:
 services:
 
   teastore-registry:
+    hostname: teastore-registry
     image: kieker/teastore-registry:kieker-2.0.2
     expose:
       - "8080"
@@ -18,6 +19,7 @@ services:
       - teastore-db
 
   teastore-db:
+    hostname: teastore-db
     image: kieker/teastore-db:kieker-2.0.2
     expose:
       - "3306"
@@ -27,6 +29,7 @@ services:
       - otel-transformer
 
   teastore-persistence:
+    hostname: teastore-persistence
     image: kieker/teastore-persistence:kieker-2.0.2
     expose:
       - "8080"
@@ -40,6 +43,7 @@ services:
       - teastore-registry
 
   teastore-auth:
+    hostname: teastore-auth
     image: kieker/teastore-auth:kieker-2.0.2
     expose:
       - "8080"
@@ -51,6 +55,7 @@ services:
       - teastore-persistence
 
   teastore-image:
+    hostname: teastore-image
     image: kieker/teastore-image:kieker-2.0.2
     expose:
       - "8080"
@@ -62,6 +67,7 @@ services:
       - teastore-recommender
 
   teastore-recommender:
+    hostname: teastore-recommender
     image: kieker/teastore-recommender:kieker-2.0.2
     expose:
       - "8080"
@@ -84,9 +90,9 @@ services:
     ports:
       - "8080:8080"
     healthcheck:
-      test: ["CMD-SHELL", "curl -s http://localhost:8080/tools.descartes.teastore.webui/status |grep -I OK |wc -l |xargs -n 1 bash -c '[ $0 == 4 ]'"]
-      interval: 5s
-      timeout: 10s
+      test: ["CMD-SHELL", "curl -s http://localhost:8080/tools.descartes.teastore.webui/status |grep -I OK |wc -l |xargs -n 1 bash -c '[ $0 == 5 ]'"]
+      interval: 2s
+      timeout: 5s
       retries: 60
     depends_on:
       - teastore-image
