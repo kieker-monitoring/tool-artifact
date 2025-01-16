@@ -46,8 +46,8 @@ docker compose up -d
 
 After launching the containers, you will be able to browse the WebUIs of TeaStore and ExplorViz.
 
-* [TeaStore WebUI](http://localhost:8080)
-* [ExplorViz WebUI](http://localhost:8082)
+* TeaStore uses the TCP port 8080. On localhost the url is [http://localhost:8080](http://localhost:8080).
+* ExplorViz uses the TCP port 8082. The url is [http://localhost:8082](http://localhost:8082).
 
 ## Stop the System
 
