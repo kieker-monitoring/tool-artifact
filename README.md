@@ -29,12 +29,12 @@ span data.
 
 ## Installation
 
-You can [download the repository files](https://github.com/kieker-monitoring/kieker-demo/archive/refs/heads/main.zip) directly without git.
+You can [download the repository files](https://github.com/kieker-monitoring/tool-artifact/archive/refs/heads/main.zip) directly without git.
 
 ### Linux and macOS
 
 ```bash
-git clone https://github.com/kieker-monitoring/kieker-demo.git
+git clone https://github.com/kieker-monitoring/tool-artifact.git
 ```
 
 ### Windows
@@ -48,7 +48,7 @@ Launching all Docker containers will take 2 to 3 minutes.
 ### Linux, macOS, and Windows
 
 ```bash
-cd kieker-demo
+cd tool-artifact
 docker compose up -d
 ```
 
