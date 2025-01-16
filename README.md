@@ -34,11 +34,15 @@ git clone https://github.com/kieker-monitoring/kieker-demo.git
 
 ## Start
 
+Launching all Docker containers will take 2 to 3 minutes.
+
 ```bash
 docker compose up -d
 ```
 
 ## Browsing TeaStore and ExplorViz WebUIs
+
+After launching the containers, you will be able to browse the WebUIs of TeaStore and ExplorViz.
 
 * [TeaStore WebUI](http://localhost:8080)
 * [ExplorViz WebUI](http://localhost:8082)
