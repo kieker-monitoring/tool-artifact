@@ -39,6 +39,7 @@ git clone https://github.com/kieker-monitoring/kieker-demo.git
 Launching all Docker containers will take 2 to 3 minutes.
 
 ```bash
+cd kieker-demo
 docker compose up -d
 ```
 
