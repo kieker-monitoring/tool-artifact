@@ -24,7 +24,8 @@ span data.
 ## Requirements
 
 * An operating system with [Docker Desktop](https://docs.docker.com/desktop/) and Git.
-* Launching the tool artifact requires two TCP ports: ``8080`` and ``8082``
+* Launching the tool artifact requires two TCP ports: ``8080`` and ``8082``.
+* On Windows, allow Docker Desktop to access public networks when prompted.
 
 ## Installation
 
