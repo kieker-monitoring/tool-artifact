@@ -30,13 +30,21 @@ span data.
 
 You can [download the repository files](https://github.com/kieker-monitoring/kieker-demo/archive/refs/heads/main.zip) directly without git.
 
+### Linux and macOS
+
 ```bash
 git clone https://github.com/kieker-monitoring/kieker-demo.git
 ```
 
+### Windows
+
+Extract the downloaded file to your desired location.
+
 ## Start the System
 
 Launching all Docker containers will take 2 to 3 minutes.
+
+### On all systems
 
 ```bash
 cd kieker-demo
@@ -48,9 +56,11 @@ docker compose up -d
 After launching the containers, you will be able to browse the WebUIs of TeaStore and ExplorViz.
 
 * TeaStore uses the TCP port 8080. On localhost the url is [http://localhost:8080](http://localhost:8080).
-* ExplorViz uses the TCP port 8082. The url is [http://localhost:8082](http://localhost:8082).
+* ExplorViz uses the TCP port 8082. The url is [http://localhost:8082](http://localhost:8082). You may see the architectural visualization of TeaStore by clicking ``Default Landscape``. No additional interactions are necessary.
 
 ## Stop the System
+
+### On all systems
 
 ```bash
 docker compose down -v
