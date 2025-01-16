@@ -1,4 +1,4 @@
-# Tool Artifact of the Kieker Observability Framework Version 2
+# Tool Artifact of Kieker Observability Framework Version 2
 
 This is a tool artifact of the [Kieker Observability Framework Version
 2](https://github.com/kieker-monitoring/kieker), submitted to [ICPE
