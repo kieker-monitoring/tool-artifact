@@ -44,7 +44,7 @@ Extract the downloaded file to your desired location.
 
 Launching all Docker containers will take 2 to 3 minutes.
 
-### On all systems
+### Linux, macOS, and Windows
 
 ```bash
 cd kieker-demo
@@ -60,7 +60,7 @@ After launching the containers, you will be able to browse the WebUIs of TeaStor
 
 ## Stop the System
 
-### On all systems
+### Linux, macOS, and Windows
 
 ```bash
 docker compose down -v
