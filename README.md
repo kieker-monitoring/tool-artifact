@@ -23,16 +23,18 @@ span data.
 
 ## Requirements
 
-* [Docker Desktop](https://docs.docker.com/desktop/)
+* An operating system with [Docker Desktop](https://docs.docker.com/desktop/) and Git.
 * Launching the tool artifact requires two TCP ports: ``8080`` and ``8082``
 
 ## Installation
+
+You can [download the repository files](https://github.com/kieker-monitoring/kieker-demo/archive/refs/heads/main.zip) directly without git.
 
 ```bash
 git clone https://github.com/kieker-monitoring/kieker-demo.git
 ```
 
-## Start
+## Start the System
 
 Launching all Docker containers will take 2 to 3 minutes.
 
@@ -47,7 +49,7 @@ After launching the containers, you will be able to browse the WebUIs of TeaStor
 * [TeaStore WebUI](http://localhost:8080)
 * [ExplorViz WebUI](http://localhost:8082)
 
-## Stop
+## Stop the System
 
 ```bash
 docker compose down -v
