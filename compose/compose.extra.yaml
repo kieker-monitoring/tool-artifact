@@ -243,6 +243,6 @@ networks:
     driver: bridge
     ipam:
       config:
-        - subnet: 172.18.0.0/16
-          gateway: 172.18.255.254
+        - subnet: 172.19.0.0/16
+          gateway: 172.19.255.254
 #endregion Volumes + Network

@@ -116,7 +116,7 @@ services:
       - frontend
     networks:
       default:
-        ipv4_address: 172.18.0.13
+        ipv4_address: 172.19.0.13
 
   adapter-service:
     hostname: adapter-service
