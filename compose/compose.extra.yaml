@@ -85,7 +85,7 @@ services:
   ## Open Telemetry ##
 
   otel-collector:
-    image: otel/opentelemetry-collector
+    image: kieker/opentelemetry-collector:kieker-2025
     hostname: otel-collector
     profiles: ["env"]
     command: ["--config=/etc/otel-collector-config.yaml"]
@@ -127,7 +127,7 @@ services:
       retries: 10
 
   init-cassandra:
-    image: explorviz/init-cassandra
+    image: kieker/init-cassandra:kieker-2025
     profiles: ["env", "init-env"]
     depends_on:
       cassandra:
